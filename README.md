@@ -1,67 +1,82 @@
-# API-AnaliseDeDados-NodeJS
-API de Análise de Dados
+# API de Análise de Dados
+
 Esta é uma API simples de análise de dados construída em Node.js usando Express. Ela permite a manipulação básica de dados de produtos, incluindo adição, listagem, atualização e exclusão.
 
-Funcionalidades
-Listar Dados: Endpoint para obter a lista de produtos.
-Análise de Receita: Endpoint para calcular a receita total com base nos produtos e suas quantidades e preços.
-Adicionar Dados: Endpoint para incluir novos produtos.
-Atualizar Dados: Endpoint para modificar informações de um produto existente.
-Excluir Dados: Endpoint para remover um produto.
-Como Testar a API
-Clone o Repositório
+## Funcionalidades
 
-bash
-Copy code
-git clone https://github.com/seu-usuario/api-analise-dados.git
-Instale as Dependências
+- **Listar Dados**: Endpoint para obter a lista de produtos.
+- **Análise de Receita**: Endpoint para calcular a receita total com base nos produtos e suas quantidades e preços.
+- **Adicionar Dados**: Endpoint para incluir novos produtos.
+- **Atualizar Dados**: Endpoint para modificar informações de um produto existente.
+- **Excluir Dados**: Endpoint para remover um produto.
 
-Certifique-se de ter o Node.js e o npm instalados. Na pasta do projeto, execute:
+## Como Testar a API
 
-bash
-Copy code
-npm install
-Execute o Servidor
+1. **Clone o Repositório**
 
-bash
-Copy code
-npm start
-Endpoints Disponíveis
+   ```bash
+   git clone https://github.com/seu-usuario/api-analise-dados.git
+   ```
 
-Listar todos os produtos:
+2. **Instale as Dependências**
 
-bash
-Copy code
-GET http://localhost:3000/dados
-Análise de Receita:
+   Certifique-se de ter o Node.js e o npm instalados. Na pasta do projeto, execute:
 
-bash
-Copy code
-GET http://localhost:3000/analise
-Adicionar um novo produto:
+   ```bash
+   npm install
+   ```
 
-bash
-Copy code
-POST http://localhost:3000/dados
-Atualizar um produto existente:
+3. **Execute o Servidor**
 
-bash
-Copy code
-PUT http://localhost:3000/dados/:id
-Excluir um produto:
+   ```bash
+   npm start
+   ```
 
-bash
-Copy code
-DELETE http://localhost:3000/dados/:id
-Formato dos Dados
+4. **Endpoints Disponíveis**
 
-Certifique-se de enviar e receber os dados no formato JSON. Para adicionar ou atualizar um produto, utilize:
+   - Listar todos os produtos:
 
-json
-Copy code
-{
-  "id": 3,
-  "nome": "Produto C",
-  "quantidade": 75,
-  "preco": 15.99
-}
+     ```
+     GET http://localhost:3000/dados
+     ```
+
+   - Análise de Receita:
+
+     ```
+     GET http://localhost:3000/analise
+     ```
+
+   - Adicionar um novo produto:
+
+     ```
+     POST http://localhost:3000/dados
+     ```
+
+   - Atualizar um produto existente:
+
+     ```
+     PUT http://localhost:3000/dados/:id
+     ```
+
+   - Excluir um produto:
+
+     ```
+     DELETE http://localhost:3000/dados/:id
+     ```
+
+5. **Formato dos Dados**
+
+   Certifique-se de enviar e receber os dados no formato JSON. Para adicionar ou atualizar um produto, utilize:
+
+   ```json
+   {
+     "id": 3,
+     "nome": "Produto C",
+     "quantidade": 75,
+     "preco": 15.99
+   }
+   ```
+
+## Contribuindo
+
+Sinta-se à vontade para contribuir com melhorias, correções ou novas funcionalidades. Basta fazer um fork do repositório, criar uma branch com suas modificações e enviar um pull request.
