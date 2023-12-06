@@ -1,4 +1,5 @@
 # API de Análise de Dados
+![Node.js Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/200px-Node.js_logo.svg.png)
 
 Esta é uma API simples de análise de dados construída em Node.js usando Express. Ela permite a manipulação básica de dados de produtos, incluindo adição, listagem, atualização e exclusão.
 
